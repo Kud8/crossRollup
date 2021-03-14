@@ -1,0 +1,128 @@
+.app {
+  font-size: 24px;
+  height: 100vh;
+  background: #F3F4F5;
+  display: flex;
+  justify-content: space-between;
+}
+
+.app__error {
+  text-align: center;
+  display: block !important;
+}
+
+.app__info {
+  width: fit-content;
+}
+
+.app__createTime {
+  font-size: 18px;
+  padding-bottom: 10px;
+  color: #F3F4F5;
+  text-align: center;
+}
+
+.app__info__table__line .app__info__table__key,
+.app__info__table__line .app__info__table__value {
+  font-size: 24px;
+  opacity: 1;
+  transition: 500ms ease-out;
+}
+
+.app__info__table__line--disabled .app__info__table__key,
+.app__info__table__line--disabled .app__info__table__value {
+  opacity: 0.4;
+  font-size: 22px;
+}
+
+.app__info__table td {
+  padding: 4px 6px;
+}
+.app__info__table__key {
+  text-align: right;
+}
+.app__info__table__actions .icon-button {
+  margin-right: 5px;
+}
+
+.icon__approve--pressed {
+  background-color: rgba(47, 194, 110, 1);
+  border-radius: 15px;
+}
+.icon__reject--pressed {
+  background-color: rgba(240, 50, 38, .85);
+  border-radius: 15px;
+}
+
+.app__account {
+  width: 30%;
+  height: 100vh;
+  background: #6D7986;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #F3F4F5;
+  box-shadow: -5px 0 10px #6D7986;
+}
+.app__account__image {
+  padding-top: 30px;
+  padding-bottom: 10px;
+  width: 150px;
+  height: 150px;
+}
+.app__account__currentAccount {
+  font-size: 18px;
+  text-align: center;
+  padding-bottom: 10px;
+}
+.app__account__currentAccount--address,
+.app__createTime--address {
+  font-weight: bold;
+}
+.app__info__balance {
+  padding-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 1.2em;
+}
+.app__info__balance__amount {
+  display: flex;
+  padding-bottom: 10px;
+}
+.app__info__balance__amount .amount .label {
+  padding-left: 10px;
+  font-size: 1.05em;
+}
+
+.app__modal__input {
+  padding-bottom: 30px;
+}
+
+.app__info__balance__button {
+  width: 220px;
+}
+
+.amount_theme_alfa-on-color .label {
+  color: rgba(255, 255, 255, 1) !important;
+}
+
+@media screen and (max-width: 1200px) {
+  .app__info {
+    padding: 40px 40px;
+    font-size: 18px;
+  }
+}
+
+@media screen and (min-width: 1200px) and (max-width: 1800px) {
+  .app__info {
+    padding: 40px 0 40px 100px;
+    font-size: 22px;
+  }
+}
+
+@media screen and (min-width: 1800px) {
+  .app__info {
+    padding: 100px 0 60px 180px;
+  }
+}
